@@ -1,0 +1,83 @@
+// .first{
+//     @include Prefixers(transition, all 4s ease, webkit moz ms o);   
+// }
+
+header{
+   
+    .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid $graycolor;
+    flex-wrap: wrap;
+   
+    }
+    .brand{
+        
+        padding: 10px;
+     h1{
+        font-size: 20px;
+     }   
+     p{
+        font-size: 14px;
+        color: $graycolor;
+     }
+    }
+    .menu{
+        background-color: $redcolor;
+        width: 60px;
+        height: 40px;
+        cursor: pointer;
+        display: none;
+        span{
+        background-color: white;
+        width: 60%;
+        height: 2px;
+        margin: 8px auto;
+        display: block;
+        }
+        @media (max-width:767px){
+            &{display: block;}
+        }
+    }
+    ul{
+    display: flex;
+    padding: 17px;
+    border-radius: 15px;
+    background-color: $redcolor;
+      @media (max-width:$mobile){
+           &{display: none;
+            width: 100%;
+            border-radius: 0;
+            text-align: center;
+            }
+        }
+         @media (min-width:$mobile){
+            &{ display: flex !important;               
+            }
+                }
+      
+    }
+    ul li {
+        padding-right: 20px;
+        @media(max-width: $mobile){
+        &{
+            padding: 20px;
+        }
+    }
+    }
+    ul li a{
+  font-size: 20px;
+  font-weight: bold;
+  color: $white;
+  transition: $transation;
+   &:hover{
+    color: $graycolor;
+   }
+   @media (max-width:$mobile){
+    &{
+      font-size:17px;
+    }
+  }
+    }
+}

@@ -1,0 +1,23 @@
+@mixin overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+@mixin Opacity($value){
+  zoom: 1;
+  $opacity-ie: $value * 100;
+  filter: alpha(opacity = $opacity-ie);
+  opacity: $value;
+}
+
+
+@mixin Prefixers($property,$value,$prefixes : ()){
+  @each $prefix in $prefixes {
+    #{"-" + $prefix + "-" + $property } : $value;
+}
+     #{$property} : $value;
+}

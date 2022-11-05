@@ -1,0 +1,138 @@
+/* Start Slider  */
+.slieder{
+    margin: auto;
+    .slieder-title{
+        width: 85%;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+    .sliders-content{
+      img{
+        width: 100%;
+        height: 300px;
+      }
+      .buttles{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        li{
+             width: 10px;
+             height: 10px;
+             border-radius: 50%;
+             background-color: $graycolor;
+             cursor: pointer;
+           }
+        .active{
+            background-color: white;
+            border: 2px solid $redcolor;
+             }
+        
+      }
+    }
+}
+/* End Slider  */
+
+/* Start Services  */
+.services .ourservices{
+  display: flex;
+  gap: 20px;
+  @media (max-width:767px) {
+  &{flex-direction: column;
+  text-align: center;
+  gap: 40px;      
+}
+  }
+  .box{
+    .lead{
+      display: flex;
+      align-content: center;
+      gap: 10px;
+      @media(max-width:767px){
+        flex-direction: column;
+   
+      }
+      i{
+        font-size: 20px;
+        @media (max-width:767px) {
+          font-size: 40px;
+        }
+      }
+      h3{
+        color: $graycolor;
+           margin: 0;
+      }
+    }
+    p{
+      color: #ddd;
+    }
+    a{
+      color: $redcolor;
+    }
+    
+  }
+}
+/* End Services  */
+
+
+/* Start Our Services  */
+.players .ourplayers{
+  display: flex;
+  
+  text-align: center;
+  gap: 30px;
+  @media (max-width:767px) {
+    flex-direction: column;
+   
+    gap: 40px;
+  }
+  .box{
+   img{
+    max-width: 100%;
+    @media (max-width:767px) {
+     border-radius: 50%;
+    }
+     }
+      h3{
+        color: $graycolor;
+        
+        color: $blackcolor;
+        span{
+          font-weight: normal;
+          color:#ddd
+        }
+      }
+    
+    p{
+      color: #ddd;
+    }
+    a{
+      color: $redcolor;
+    }
+    
+  }
+}
+/* End Our Services  */
+
+
+/* Start Latset Work  */
+.latestwork .ourlatest{
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  @media (max-width:767px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .box{
+    img{
+      max-width: 100%;
+    }
+  }
+}
+/* End Latset Work  */
+
+
+
